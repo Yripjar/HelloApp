@@ -1,5 +1,8 @@
 public class HelloApp {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
+        String name = args[0];   // take input from command line
+
+        System.out.println("Hello, " + name + "!");
     }
 }
