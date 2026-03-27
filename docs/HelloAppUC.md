@@ -208,3 +208,45 @@ for (String name : args) {
 * Enhanced for loop
 * StringBuilder
 * Array iteration
+ # UC6: Display Hello using substring method
+
+## Description
+
+The app builds a string with all names and removes the trailing delimiter using substring().
+
+## Preconditions
+
+* Program runs with zero or more arguments
+
+## Main Flow
+
+1. Check if args.length == 0
+2. If yes → print "World"
+3. Else → append all names with ", "
+4. Remove last ", " using substring
+5. Print greeting
+
+## Post Conditions
+
+* Properly formatted greeting displayed
+
+## Disadvantages of Previous Use Case
+
+* UC5 needed conditional logic inside loop
+
+## Hints
+
+* Always append ", "
+* Remove using substring()
+
+## Code Snippet
+
+```java
+String names = nameBuilder.substring(0, nameBuilder.length() - 2);
+```
+
+## Concepts Learned
+
+* substring()
+* StringBuilder cleanup
+* Cleaner logic separation
