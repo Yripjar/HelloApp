@@ -121,3 +121,45 @@ String name = (args.length > 0) ? args[0] : "World";
 * Conditional logic
 * Default values
 * Ternary operator
+
+# UC4: Display Hello with Multiple Command-Line Arguments
+
+## Description
+
+The app accepts multiple names and displays a greeting for all of them. If no names are provided, it defaults to "World".
+
+## Preconditions
+
+* Program runs with zero or more arguments
+
+## Main Flow
+
+1. Check if args.length > 0
+2. If yes → join all names
+3. Else → use "World"
+4. Print greeting
+
+## Post Conditions
+
+* Greeting displayed with all names
+
+## Disadvantages of Previous Use Case
+
+* UC3 supports only one name
+
+## Hints
+
+* Use String.join()
+* Use args array
+
+## Code Snippet
+
+```java
+String names = String.join(", ", args);
+```
+
+## Concepts Learned
+
+* Arrays
+* Loop abstraction (String.join)
+* Multiple inputs handling
