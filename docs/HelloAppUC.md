@@ -208,3 +208,44 @@ for (String name : args) {
 * Enhanced for loop
 * StringBuilder
 * Array iteration
+
+# UC7: Display Hello using String.join()
+
+## Description
+
+The app uses String.join() to concatenate multiple names efficiently.
+
+## Preconditions
+
+* Program runs with zero or more arguments
+
+## Main Flow
+
+1. Check if args.length == 0
+2. If yes → print "World"
+3. Else → use String.join()
+4. Print greeting
+
+## Post Conditions
+
+* Clean formatted greeting
+
+## Disadvantages of Previous Use Case
+
+* UC6 required manual substring cleanup
+
+## Hints
+
+* Use String.join(", ", args)
+
+## Code Snippet
+
+```java
+String names = String.join(", ", args);
+```
+
+## Concepts Learned
+
+* String.join()
+* Built-in methods
+* Cleaner code

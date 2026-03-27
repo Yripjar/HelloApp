@@ -6,16 +6,8 @@ public class HelloApp {
         if (args.length == 0) {
             message = "Hello, World!";
         } else {
-            StringBuilder names = new StringBuilder();
-
-            for (String name : args) {
-                if (names.length() > 0) {
-                    names.append(", ");
-                }
-                names.append(name);
-            }
-
-            message = "Hello, " + names.toString() + "!";
+            String names = String.join(", ", args);
+            message = "Hello, " + names + "!";
         }
 
         System.out.println(message);
