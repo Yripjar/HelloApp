@@ -163,3 +163,48 @@ String names = String.join(", ", args);
 * Arrays
 * Loop abstraction (String.join)
 * Multiple inputs handling
+
+# UC5: Display Hello using Enhanced For Loop
+
+## Description
+
+The app uses an enhanced for loop to process multiple names. Defaults to "World" if no input is given.
+
+## Preconditions
+
+* Program runs with zero or more arguments
+
+## Main Flow
+
+1. Check if args.length == 0
+2. If yes → print "World"
+3. Else → iterate using for-each loop
+4. Build comma-separated names
+5. Print greeting
+
+## Post Conditions
+
+* Greeting displayed correctly
+
+## Disadvantages of Previous Use Case
+
+* UC4 used simpler join, less control
+
+## Hints
+
+* Use for (String name : args)
+* Use StringBuilder
+
+## Code Snippet
+
+```java
+for (String name : args) {
+    // process name
+}
+```
+
+## Concepts Learned
+
+* Enhanced for loop
+* StringBuilder
+* Array iteration
